@@ -2,14 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import 'remixicon/fonts/remixicon.css'
 import './App.css'
-import Projects from './component/Projects/Projects'
-import Contact from './component/Contact/Contact'
-import Header from './component/Header/Header'
-import Hero from './component/Hero/Hero'
-import LandingProject from './component/Landing-Projects/LandingProject'
-import SuggestedProjects from './component/Suggested-Projects/SuggestedProjects'
-import Skills from './component/Skills/Skills'
-import Footer from './component/Footer/Footer'
+import { Projects, Contact, Header, Hero, LandingProject, SuggestedProjects, Skills, Footer } from './Import.js'
+
 
 function App() {
   return (

@@ -1,0 +1,128 @@
+.projects {
+    padding-top: 10vh;
+
+}
+
+.right-psection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: auto;
+    padding-left: 21rem;
+}
+
+.left-psection {
+    position: fixed;
+    left: -2vh;
+    top: 8vh;
+    width: 320px;
+    height: 92vh;
+    background-color: #f3f4f6;
+    padding: 2rem;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    z-index: 10000000000;
+}
+
+.left-psection button {
+    background-color: #101828;
+    width: 90%;
+    height: 40px;
+    margin: 9px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.right-psection .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 348px;
+    gap: 1rem;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.right-psection .project-card:hover img {
+    scale: calc(105%);
+    transform: rotate(-2deg);
+}
+.right-psection .image {
+    padding: 0 !important;
+    overflow: hidden;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+.right-psection .image img {
+    width: 348px;
+    height: 274.44px;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.right-psection .project-card div {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.right-psection h1 {
+    align-items: flex-start !important;
+    text-align: start !important;
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a0c50;
+
+}
+
+.right-psection p {
+    font-size: 13px;
+    display: flex;
+    align-items: flex-start !important;
+    text-align: start;
+    justify-content: flex-start !important;
+        font-weight: 400;
+    margin: 5px;
+    color: #21105f;
+}
+
+.visit {
+    background-color: #101828;
+    width: 95%;
+    height: 30px;
+    margin: 9px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 1550px) {
+    
+.right-psection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 1150px) {
+    
+.right-psection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+@media (max-width: 770px) {
+    /* dont forget to edit it */
+.right-psection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+}

@@ -1,0 +1,9 @@
+
+export {default as Projects} from './component/Projects/Projects'
+export {default as Contact} from './component/Contact/Contact'
+export {default as Header} from './component/Header/Header'
+export {default as Hero} from './component/Hero/Hero'
+export {default as LandingProject} from './component/Landing-Projects/LandingProject'
+export {default as SuggestedProjects} from './component/Suggested-Projects/SuggestedProjects'
+export {default as Skills} from './component/Skills/Skills'
+export {default as Footer} from './component/Footer/Footer'
