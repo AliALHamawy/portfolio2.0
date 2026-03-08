@@ -38,6 +38,16 @@
     cursor: pointer;
 }
 
+.left-psection button:hover {
+    background-color: #1a0c50;
+}
+
+
+.left-psection button.active {
+    background-color: #1a0c50;
+    transform: scale(0.98);
+}
+
 .right-psection .project-card {
     display: flex;
     flex-direction: column;
