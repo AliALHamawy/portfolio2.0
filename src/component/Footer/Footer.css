@@ -1,0 +1,13 @@
+Footer {
+    border-top: 1px solid #63606050;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    padding-top: 10px;
+
+}
+
+Footer a {
+    color: #06c7f6;
+}

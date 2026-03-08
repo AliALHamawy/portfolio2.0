@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Joti+One&display=swap');
+
+.hero {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hero h1 {
+    font-family: "Italianno", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.hero h3 {
+    font-family: "HeadlandOne", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero .right-Section p {
+    font-family: "Joti One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.hero .right-Section p .ali {
+    color: #1877f2;
+}
+
+.hero .mind {
+    margin-left: 30%;
+    height: 300px;
+}
+
+.right-Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.facebook,
+.linkedin,
+.github,
+.telegram,
+.instagram {
+    font-size: 30px;
+}
+
+.facebook {
+    color: #1877f2;
+}
+
+.linkedin {
+    color: #0a66c2;
+}
+
+.github {
+    color: #333;
+}
+
+.telegram {
+    color: #0088cc;
+}
+
+.instagram {
+    color: #e4405f;
+}
+
+.mid {
+    position: relative;
+    height: 300px;
+    margin: auto;
+    left: 20%;
+}
+
+.left-Section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5 rem;
+}
+
+.left-Section img {
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.left-Section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.left-Section h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin: 0;
+}
+
+
+.icon-container {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.ali {
+    font-weight: bold;
+}
+
+@media (max-width: 1150px) {
+    .hero .right-Section p {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .hero .right-Section p {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 910px) {
+    .hero .right-Section p {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 797px) {
+    .hero .right-Section p {
+        font-size: 30px;
+    }
+/* edit */
+}
