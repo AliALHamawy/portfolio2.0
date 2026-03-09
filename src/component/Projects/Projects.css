@@ -28,23 +28,24 @@
     z-index: 10000000000;
 }
 
-.left-psection button {
-    background-color: #101828;
+button {
+    background-color: #1877f2;
     width: 90%;
     height: 40px;
     margin: 9px;
     border-radius: 5px;
     color: white;
     cursor: pointer;
+    transition: all .5s;
 }
 
-.left-psection button:hover {
-    background-color: #1a0c50;
+button:hover {
+    background-color: #034ae2;
 }
 
 
-.left-psection button.active {
-    background-color: #1a0c50;
+button.active {
+    background-color: #034ae2;
     transform: scale(0.98);
 }
 
@@ -63,11 +64,13 @@
     scale: calc(105%);
     transform: rotate(-2deg);
 }
+
 .right-psection .image {
     padding: 0 !important;
     overflow: hidden;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
 }
+
 .right-psection .image img {
     width: 348px;
     height: 274.44px;
@@ -76,13 +79,15 @@
 }
 
 .right-psection .project-card div {
-    padding-left: 1rem;
-    padding-right: 1rem;
     overflow: hidden;
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    border-bottom: 1px solid #4b4b4d50;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    min-height: 120px;
 }
 
 .right-psection h1 {
@@ -101,13 +106,13 @@
     align-items: flex-start !important;
     text-align: start;
     justify-content: flex-start !important;
-        font-weight: 400;
+    font-weight: 400;
     margin: 5px;
     color: #21105f;
 }
 
 .visit {
-    background-color: #101828;
+    background-color: #1877f2;
     width: 95%;
     height: 30px;
     margin: 9px;
@@ -115,24 +120,28 @@
     color: white;
     cursor: pointer;
 }
+
 @media (max-width: 1550px) {
-    
-.right-psection {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
+    .right-psection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
-}
+
 @media (max-width: 1150px) {
-    
-.right-psection {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+
+    .right-psection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
-}
+
 @media (max-width: 770px) {
+
     /* dont forget to edit it */
-.right-psection {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-}
+    .right-psection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

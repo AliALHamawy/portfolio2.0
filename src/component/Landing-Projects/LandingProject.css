@@ -1,0 +1,115 @@
+.landing-projects-section {
+  padding: 2rem 1rem;
+  min-height: 24rem;
+  margin-top: 2rem;
+  /* Theme variables for carousel (so embla/sandbox CSS resolve) */
+  --background-site: rgb(249, 249, 249);
+  --text-body: rgb(54, 49, 61);
+  --text-high-contrast: rgb(49, 49, 49);
+  --text-low-contrast: rgb(116, 109, 118);
+  --detail-high-contrast: rgb(192, 192, 192);
+  --detail-medium-contrast: rgb(234, 234, 234);
+  --text-high-contrast-rgb-value: 49, 49, 49;
+}
+
+.Swiper {
+  padding: 1rem;
+}
+
+.landing-projects-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: auto;
+  padding-left: 21rem;
+}
+
+.landing-projects-section .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 348px;
+  gap: 1rem;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.landing-projects-section .project-card .image {
+  padding: 0 !important;
+  overflow: hidden;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.landing-projects-section .project-card .image img {
+  width: 348px;
+  height: 274.44px;
+  border-radius: 10px 10px 0 0;
+  transition: all .5s;
+}
+
+.landing-projects-section .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 348px;
+  gap: 1rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.landing-projects-section.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  transition: all .5s;
+}
+
+.project-card .text-div {
+  overflow: hidden;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid #4b4b4d50;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  min-height: 120px;
+}
+
+.landing-projects-section .project-card h1 {
+  align-items: flex-start !important;
+  text-align: start !important;
+  font-size: 25px;
+  font-weight: 600;
+  color: #1a0c50;
+
+}
+
+.landing-projects-section .project-card p {
+  font-size: 14px;
+  display: flex;
+  align-items: flex-start !important;
+  text-align: start;
+  justify-content: flex-start !important;
+  font-weight: 400;
+  margin: 5px;
+  color: #21105f80;
+}
+
+.landing-projects-section .visit {
+  background-color: #1877f2;
+  width: 95%;
+  height: 30px;
+  margin: 9px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ====================== */

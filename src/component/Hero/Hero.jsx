@@ -27,7 +27,7 @@ export default function Hero() {
                     </p>
                 </div>
             </section>
-            <hr />
+            <hr className='my-5 pb-20'/>
         </>
     )
 }
