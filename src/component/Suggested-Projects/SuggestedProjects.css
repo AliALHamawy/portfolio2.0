@@ -3,44 +3,46 @@
   background-image: url("/src/assets/projects photo/placeholder.svg");
   background-repeat: no-repeat;
   background-position: center;
-    padding: 120px 20px;
-    border-radius: 20px;
-    font-family: 'Barlow', sans-serif;
+  padding: 120px 20px;
+  border-radius: 20px;
+  font-family: 'Barlow', sans-serif;
   color: hsl(0, 0%, 100%);
-    font-weight: 600;
+  font-weight: 600;
   background-size: cover;
-    padding-left: 80px;
-    padding-right: 80px;
-    width: 80vw;
-    position: relative;
-    
+  padding-left: 80px;
+  padding-right: 80px;
+  width: 80vw;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+
 }
 
 .suggested-projects ul li::before {
-   content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-   background-image: inherit;
-   background-size: inherit;
-   background-position: inherit;
-   background-repeat: inherit;
-    border-radius: inherit;
-    filter: grayscale(100%);
-    transition: all 0.5s ease-in-out;
-    z-index: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit;
+  background-size: 100%;
+  background-position: inherit;
+  background-repeat: inherit;
+  border-radius: inherit;
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in-out;
+  z-index: 0;
 }
 
 .suggested-projects ul li:hover::before {
-    filter: grayscale(0%);
+  filter: grayscale(0%);
+  background-size: 105%;
 }
 
 .suggested-projects ul li h1 {
-    font-size: 40px;
-    font-weight: 900;
-   color: #1877f2;
-    position: relative;
-    z-index: 1;
+  font-size: 40px;
+  font-weight: 900;
+  color: #1877f2;
+  position: relative;
+  z-index: 1;
 }

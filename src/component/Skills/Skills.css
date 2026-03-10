@@ -3,4 +3,26 @@
 }
 .gray {
     color: rgb(87, 88, 90) !important;
+    transition: all 0.5s ease;
+}
+.html:hover {
+    color: #e34f26 !important;
+}
+.css:hover {
+    color: #264de4 !important;
+}
+.js:hover {
+    color: #f7df1e !important;
+}
+.reactjs:hover {
+    color: #61b6fb !important;
+}
+.bootstrap:hover {
+    color: #563d7c !important;
+}
+.tailwind-css:hover {
+    color: #38bdf8 !important;
+}
+.figma:hover {
+    color: #000 !important;
 }

@@ -28,5 +28,3 @@ function SuggestedProjects() {
 
 export default SuggestedProjects
 
-
-//  style={{backgroundImage: url({arr.imgPath})}}

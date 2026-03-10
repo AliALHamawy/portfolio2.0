@@ -1,0 +1,38 @@
+.myw {
+    width: 100%;
+}
+.contact{
+    /* i want the section to be in the center and no scroll in small screen but the navbar coverd the tob of it */
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100vh;
+    max-height: 100vh;
+}
+form {
+    
+}
+form,
+input,
+textarea {
+    all: none;
+    resize: none;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: #63606050;
+    box-shadow: 0 0 5px rgba(95, 96, 97, 0.5);
+    transition: all .5s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #1877f2;
+    outline: #1877f2;
+}
+
+.none {
+    display: none;
+}
+
+.flexy {
+    display: flex;
+}
