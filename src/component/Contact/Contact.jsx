@@ -52,22 +52,23 @@ function Contact() {
 
     return (
         <div className='contact flex '>
-    <div className="leftsc  ">
+    <div className='container'>
+        <div className="leftsc  ">
         Contact Us
     </div>
     <div className="rightsc">
         <form onSubmit={handleSubmit} className=' flex flex-col justify-center text-center align-middle m-auto'>
-            <div className="">
+            
                 <input type="text" placeholder='Enter your name' value={name} onChange={(e) => setName(e.target.value)} className='' />
                 <input type="email" placeholder='Enter your email' value={email} onChange={(e) => setEmail(e.target.value)} className='' />
                 <input type="text" placeholder='Enter your Title' value={title} onChange={(e) => setTitle(e.target.value)} className='' />
+            <textarea placeholder='Enter your message'
+                value={message} onChange={(e) => setMessage(e.target.value)} className='' />
             <button type='submit' className='contact-btn'>
                 Submit
             </button>
-            </div>
-            <textarea placeholder='Enter your message'
-                value={message} onChange={(e) => setMessage(e.target.value)} className='' />
         </form>
+    </div>
     </div>
 </div>
     )
