@@ -17,7 +17,7 @@
     width: 320px;
     height: 100vh;
     bottom: .2vh;
-    background-color: #f3f4f6;
+    background: linear-gradient(35deg, #fff, #1877f2);
     padding: 2rem;
     overflow-y: auto;
     border-right: 1px solid #ddd;

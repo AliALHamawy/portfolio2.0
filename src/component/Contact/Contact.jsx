@@ -51,23 +51,22 @@ function Contact() {
     }
 
     return (
-        <div className='contact flex w-full'>
-    <div className="left my-auto w-2/5 h-10/12">
-        lkjkjllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll<br/>
-        ssssssss<br/>sdadad,b
+        <div className='contact flex '>
+    <div className="leftsc  ">
+        Contact Us
     </div>
-    <div className="right w-3/5">
-        <form onSubmit={handleSubmit} className='border flex flex-col justify-center text-center align-middle m-auto'>
-            <div className="mt-100">
-                <input type="text" placeholder='Enter your name' value={name} onChange={(e) => setName(e.target.value)} className='border' />
-                <input type="email" placeholder='Enter your email' value={email} onChange={(e) => setEmail(e.target.value)} className='border' />
-                <input type="text" placeholder='Enter your Title' value={title} onChange={(e) => setTitle(e.target.value)} className='border' />
-            </div>
-            <textarea placeholder='Enter your message'
-                value={message} onChange={(e) => setMessage(e.target.value)} className='border' />
-            <button type='submit' className='border'>
+    <div className="rightsc">
+        <form onSubmit={handleSubmit} className=' flex flex-col justify-center text-center align-middle m-auto'>
+            <div className="">
+                <input type="text" placeholder='Enter your name' value={name} onChange={(e) => setName(e.target.value)} className='' />
+                <input type="email" placeholder='Enter your email' value={email} onChange={(e) => setEmail(e.target.value)} className='' />
+                <input type="text" placeholder='Enter your Title' value={title} onChange={(e) => setTitle(e.target.value)} className='' />
+            <button type='submit' className='contact-btn'>
                 Submit
             </button>
+            </div>
+            <textarea placeholder='Enter your message'
+                value={message} onChange={(e) => setMessage(e.target.value)} className='' />
         </form>
     </div>
 </div>

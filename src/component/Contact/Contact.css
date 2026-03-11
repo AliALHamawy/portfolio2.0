@@ -1,0 +1,75 @@
+.contact .leftsc {
+
+    position: fixed;
+    left: -2vw;
+    width: 320px;
+    height: 100vh;
+    bottom: .2vh;
+    background: linear-gradient(35deg, #fff, #1877f2);
+    padding: 2rem;
+    overflow-y: auto;
+    border-right: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #1877f2;
+    font-size: 40px;
+    font-family: "Joti One", serif;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+    gap: 5rem;
+}
+
+.contact .rightsc {
+    margin-top: 36vh;
+    margin-left: 25vw;
+    justify-content: center;
+
+
+}
+
+.contact .rightsc form {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    /* justify-content: center; */
+    padding: 6px;
+    width: 60vw;
+    border: 2px solid #003881;
+    /* border-radius: 10px; */
+    /* box-shadow: 1px 1px 10px #676a6e; */
+}
+
+.contact .rightsc form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 26px;
+    width: 40%;
+}
+
+.contact .rightsc form div input {
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #003881;
+    /* border-radius: 10px; */
+    color: #031c3d;
+    /* box-shadow: 1px 1px 10px #676a6e; */
+}
+
+.contact .rightsc form textarea {
+    width: 55%;
+    height: 370px;
+    resize: none;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid #003881;
+    /* border-radius: 10px; */
+    color: #031c3d;
+    /* box-shadow: 1px 1px 10px #676a6e; */
+}
+.contact-btn {
+    background-color: #003881;
+}
