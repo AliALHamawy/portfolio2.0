@@ -1,5 +1,6 @@
 .skills .container {
     width: 80%;
+    height: 5px;
 }
 .gray {
     color: rgb(87, 88, 90) !important;

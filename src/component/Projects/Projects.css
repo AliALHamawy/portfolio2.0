@@ -13,10 +13,10 @@
 
 .left-psection {
     position: fixed;
-    left: -2vh;
-    top: 8vh;
+    left: -2vw;
     width: 320px;
-    height: 92vh;
+    height: 100vh;
+    bottom: .2vh;
     background-color: #f3f4f6;
     padding: 2rem;
     overflow-y: auto;
@@ -25,7 +25,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 5rem;
-    z-index: 10000000000;
+    /* z-index: 10000000000; */
 }
 
 button {

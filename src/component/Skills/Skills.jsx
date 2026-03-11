@@ -2,7 +2,7 @@ import './Skills.css'
 
 function Skills() {
   return (
-    <div className='.skills mt-10'>
+    <div className='skills mt-10'>
       <hr />
       <div className="container flex justify-center mx-auto gap-10 mt-10">
         <i className='ri-html5-line text-6xl gray icon html'></i>

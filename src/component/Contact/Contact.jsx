@@ -15,7 +15,7 @@ function Contact() {
         }
 
         window.addEventListener('resize', handleResize)
-        
+
         // Cleanup
         return () => {
             window.removeEventListener('resize', handleResize)
@@ -37,7 +37,7 @@ function Contact() {
             message: message
         }
 
-        emailjs.send(serviceId, templateId, templateParams, publicKey) 
+        emailjs.send(serviceId, templateId, templateParams, publicKey)
             .then((response) => {
                 console.log("Email sent succesfully!", response);
                 setName('')
@@ -51,64 +51,26 @@ function Contact() {
     }
 
     return (
-        <div className='justify-center flex align-middle min-h-screen m-auto text-center gap-5 contact'>
-            <form onSubmit={handleSubmit} className='emailForm border flex justify-center  align-middle text-center w-11/12 h-auto m-auto gap-5 p-5' style={{
-                flexDirection: isMobile ? 'column' : 'row',
-            }}>
-                <div className="container flex flex-col gap-10 justify-center" style={{
-                    width: isMobile ? '100%' : '41.666667%'
-                }}>
-                    <input
-                        type="text"
-                        placeholder='Enter your name'
-                        value={name}
-                        className='border h-2/12'
-                        onChange={(e) => setName(e.target.value)} 
-                    />
-                    <input
-                        type="email"
-                        placeholder='Enter your email'
-                        value={email}
-                        className='border h-2/12'
-                        onChange={(e) => setEmail(e.target.value)} 
-                    />
-                    <input
-                        type="text"
-                        placeholder='Enter your Title'
-                        value={title}
-                        className='border h-2/12'
-                        onChange={(e) => setTitle(e.target.value)} 
-                    />
-                    
-                    {/* Button placement based on screen size */}
-                    {!isMobile && (
-                        <button type='submit' className='border'>
-                            Submit
-                        </button>
-                    )}
-                </div>
-                
-                <div className="flex flex-col gap-7 " style={{
-                    width: isMobile ? '100%' : '58.333333%'
-                }}>
-                    <textarea 
-                        cols={30} 
-                        rows={isMobile ? 10 : 20} 
-                        placeholder='Enter your message' 
-                        value={message} 
-                        className='border w-full  md:h-11/12 m-auto' 
-                        onChange={(e) => setMessage(e.target.value)} 
-                    />
-                    
-                    {/* Button at bottom for mobile */}
-                    {isMobile && (
-                        <button type='submit' className='border w-full'>
-                            Submit
-                        </button>
-                    )}
-                </div>
-            </form>
-        </div>
+        <div className='contact flex w-full'>
+    <div className="left my-auto w-2/5 h-10/12">
+        lkjkjllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll<br/>
+        ssssssss<br/>sdadad,b
+    </div>
+    <div className="right w-3/5">
+        <form onSubmit={handleSubmit} className='border flex flex-col justify-center text-center align-middle m-auto'>
+            <div className="mt-100">
+                <input type="text" placeholder='Enter your name' value={name} onChange={(e) => setName(e.target.value)} className='border' />
+                <input type="email" placeholder='Enter your email' value={email} onChange={(e) => setEmail(e.target.value)} className='border' />
+                <input type="text" placeholder='Enter your Title' value={title} onChange={(e) => setTitle(e.target.value)} className='border' />
+            </div>
+            <textarea placeholder='Enter your message'
+                value={message} onChange={(e) => setMessage(e.target.value)} className='border' />
+            <button type='submit' className='border'>
+                Submit
+            </button>
+        </form>
+    </div>
+</div>
     )
 }
 
