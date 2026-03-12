@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import './Projects.css'
 import { myProjects } from './myProjects'
+import { useNavigate } from 'react-router-dom';
+
 function Projects() {
     const [arr, setArr] = useState(myProjects);
     const [currentActive, setCurrentActive] = useState("all")
+    const navigate = useNavigate();
     const handleClick = (buttonCategory) => {
         setCurrentActive(buttonCategory)
         if (buttonCategory === "all") {
@@ -15,6 +18,14 @@ function Projects() {
         )
         setArr(newArr)
     }
+
+    const handleMoreClick = (project) => {
+        const titleSlug = project.projectTitle.replace(/\s+/g, '-').toLowerCase()
+        navigate(`/project/${titleSlug}`, {
+            state: {project}
+        })
+    }
+
     return (
         <>
             <div className="projects flex">
@@ -44,7 +55,9 @@ function Projects() {
                                 <h1>{item.projectTitle}</h1>
                                 <p>{item.subTitle}</p>
                             </div>
-                            <button className='visit'>MORE</button>
+                            <button
+                                className='visit' 
+                                onClick={() => handleMoreClick(item)}>MORE</button>
                         </div>
                     ))}
                 </div>

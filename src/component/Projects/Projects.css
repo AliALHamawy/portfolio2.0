@@ -17,7 +17,7 @@
     width: 320px;
     height: 100vh;
     bottom: .2vh;
-    background: linear-gradient(35deg, #fff, #1877f2);
+    background: linear-gradient(35deg , #06c7f6,#1877f2  );
     padding: 2rem;
     overflow-y: auto;
     border-right: 1px solid #ddd;
@@ -96,7 +96,7 @@ button.active {
 
     font-size: 20px;
     font-weight: 600;
-    color: #1a0c50;
+    color: #06c7f6;
 
 }
 
@@ -108,7 +108,7 @@ button.active {
     justify-content: flex-start !important;
     font-weight: 400;
     margin: 5px;
-    color: #21105f;
+    color: #60ddfc;
 }
 
 .visit {

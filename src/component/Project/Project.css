@@ -1,0 +1,26 @@
+
+.project .top-section .left-section .info {
+    margin-left: 20px;
+}
+
+.project .top-section .left-section .info .title,
+.project .top-section .left-section .info .sub-title,
+.project .top-section .left-section .info .nots {
+    color: #1877f2;
+}
+
+.project .top-section .left-section .info .title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.project .top-section .left-section .image img{
+    width: 330px;
+    height: 200px !important;
+}
+
+.project .top-section .right-section button.ri-github-line,
+.project .top-section .right-section button.ri-alibaba-cloud-line {
+    font-size: 26px;
+
+}

@@ -6,3 +6,4 @@ export {default as LandingProject} from './component/Landing-Projects/LandingPro
 export {default as SuggestedProjects} from './component/Suggested-Projects/SuggestedProjects'
 export {default as Skills} from './component/Skills/Skills'
 export {default as Footer} from './component/Footer/Footer'
+export {default as Project} from './component/Project/Project'
