@@ -6,6 +6,8 @@ import { Projects, Contact, Header, Hero, LandingProject, SuggestedProjects, Ski
 import { ErrorBoundary } from './component/ErrorBoundary.jsx'
 
 function App() {
+
+  
   return (
     <BrowserRouter>
       <Header />

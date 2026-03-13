@@ -1,44 +1,50 @@
 import { useState } from 'react'
-import  './Project.css'
-// import projectInfo from './projectInfo'
-import { useLocation, useNavigate } from 'react-router-dom'
+import './Project.css'
+import { useLocation, } from 'react-router-dom'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+import { Pagination, Navigation } from 'swiper/modules';
 
 function Project() {
-    const [copy , setCopy] = useState(null)
-
+    const [copy, setCopy] = useState(null)
     const location = useLocation()
-    const navigate = useNavigate()
     const project = location.state?.project
-    if(!project) {
+    console.log('Project data:', project)
+
+    if (!project) {
         return <div className="container flex justify-center align-middle text-center ">Page Not Found </div>
     }
+
     const handleCopyLink = async () => {
         try {
             await navigator.clipboard.writeText(project.link);
-            setCopy(link);
+            setCopy(project.link);
             setTimeout(() => setCopy(null), 1500)
-        }catch(error) {
-            console.log("Failed to copy link",error)
-            
+        } catch (error) {
+            console.log("Failed to copy link", error)
         }
     }
 
     return (
         <>
-        
-            {/* <button className="back-button" onClick={() => navigate(-1)}>
-                ← Back to Projects
-            </button> */}
+
             <div className="project pt-22 mx-auto p-2">
+                {/* {arr.map((item) => ( */}
                 <div className="top-section flex justify-between">
                     <div className="left-section flex">
                         <div className="image">
-                            <img src={project.imgPath} alt="" />
+                            <img src={project.imgPath} alt={project.projectTitle} />
                         </div>
                         <div className="info flex flex-col gap-3 w-150 p-2 ">
-                            <h2 className='title '>{project.projectTitle}</h2>
-                            <p className='sub-title'>{project.subTitle}</p>
-                            <p className='nots'>Nots</p>
+                            <h2 className="title">{project.projectTitle}</h2>
+                            <p className="sub-title">{project.subTitle}</p>
+                            <p className="nots">Note: {project.note}</p>
                         </div>
                     </div>
                     <div className="right-section justify-center align-middle text-center">
@@ -47,8 +53,26 @@ function Project() {
                         <button className='ri-alibaba-cloud-line' onClick={handleCopyLink}></button>
                     </div>
                 </div>
+                {/* ))} */}
                 <div className="bottom-section">
-                    
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        loop={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        navigation={true}
+                        modules={[Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide><img src="/src/assets/projectPhoto/landingpage1img1.png" alt="" /></SwiperSlide>
+                        <SwiperSlide><img src="/src/assets/projectPhoto/landingpage1img2.png" alt="" /></SwiperSlide>
+                        <SwiperSlide><img src="/src/assets/projectPhoto/landingpage1img3.png" alt="" /></SwiperSlide>
+                        <SwiperSlide><img src="/src/assets/projectPhoto/landingpage1img4.png" alt="" /></SwiperSlide>
+                        <SwiperSlide><img src="/src/assets/projectPhoto/landingpage1img5.png" alt="" /></SwiperSlide>
+                        
+                    </Swiper>
                 </div>
             </div>
         </>
