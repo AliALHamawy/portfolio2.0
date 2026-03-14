@@ -11,6 +11,11 @@ import 'swiper/css/navigation';
 
 import { Pagination, Navigation } from 'swiper/modules';
 
+// import { img } from '../Projects/myProjects'
+// import { myProjects } from '../Projects/myProjects';
+
+// const projectImagesList = img[myProjects.id]|| []
+
 function Project() {
     const [copy, setCopy] = useState(null)
     const location = useLocation()
@@ -56,22 +61,20 @@ function Project() {
                 {/* ))} */}
                 <div className="bottom-section">
                     <Swiper
-                        slidesPerView={1}
+                        slidesPerView={'auto'}
                         spaceBetween={30}
-                        loop={true}
                         pagination={{
                             clickable: true,
                         }}
-                        navigation={true}
-                        modules={[Pagination, Navigation]}
+                        modules={[Pagination]}
                         className="mySwiper"
                     >
-                        <SwiperSlide><img src="/src/assets/projectPhoto/landingpage1img1.png" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src="/src/assets/projectPhoto/landingpage1img2.png" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src="/src/assets/projectPhoto/landingpage1img3.png" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src="/src/assets/projectPhoto/landingpage1img4.png" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src="/src/assets/projectPhoto/landingpage1img5.png" alt="" /></SwiperSlide>
+                            <SwiperSlide >
+                                {project.imgs.map((img, index) => (<img key={index} src={img} alt={`${project.projectTitle} screenshot ${index + 1}`} />))}
+                            </SwiperSlide>
                         
+
+
                     </Swiper>
                 </div>
             </div>

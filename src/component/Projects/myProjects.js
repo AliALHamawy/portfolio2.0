@@ -1,16 +1,237 @@
 export const myProjects = [
-    { projectTitle: "Landing Page1", subTitle: "A minimal hero section with smooth scroll CTA.", category: "css", imgPath: "/src/assets/projects photo/landing-page1.jpg", link: "https://alialhamawy.github.io/html_css_project1/", gitRepo: "https://github.com/AliALHamawy/html_css_project1", important: "no", note: "The site build with HTML and CSS" },
-    { projectTitle: "Landing Page2", subTitle: "Modern product layout built with pure CSS grids.", category: "css", imgPath: "/src/assets/projects photo/Landing%20Page2.jpg", link: "https://alialhamawy.github.io/html_css_project2/#include", gitRepo: "https://github.com/AliALHamawy/html_css_project2", important: "no", note: "The site build with HTML and CSS" },
-    { projectTitle: "Landing Page3", subTitle: "Lifestyle landing with storytelling copy and imagery.", category: "css", imgPath: "/src/assets/projects photo/Landing%20Page3.jpg", link: "https://alialhamawy.github.io/Html_Css_Project3/", gitRepo: "https://github.com/AliALHamawy/Html_Css_Project3", important: "no", note: "The site build with HTML and CSS" },
-    { projectTitle: "Landing Page4", subTitle: "Interactive landing that adds micro‑animations via JS.", category: "js", imgPath: "/src/assets/projects photo/JS Landing Page.jpg", link: "https://alialhamawy.github.io/Project5/", gitRepo: "https://github.com/AliALHamawy/Project5", important: "no", note: "The site build with HTML, CSS and JS" },
-    { projectTitle: "BootStrap", subTitle: "Responsive multi-section site powered by Bootstrap 5.", category: "bootstrap", imgPath: "/src/assets/projects photo/BootStrap.jpg", link: "https://alialhamawy.github.io/First-BootStrap/", gitRepo: "https://github.com/AliALHamawy/First-BootStrap", important: "no", note: "The site build with HTML, CSS, JS and BootStrab" },
-    { projectTitle: "Account ", subTitle: "Clean account dashboard concept with cards and stats.", category: "css", imgPath: "/src/assets/projects photo/Account%20.jpg", link: "https://alialhamawy.github.io/Acounts/", gitRepo: "https://github.com/AliALHamawy/Acounts", important: "no", note: "The site build with HTML and CSS" },
-    { projectTitle: "Login Form", subTitle: "Glassmorphism login experience with subtle hover states.", category: "css", imgPath: "/src/assets/projects photo/Login%20Form.jpg", link: "http://alialhamawy.github.io/Login-repo/index.html", gitRepo: "https://github.com/AliALHamawy/Login-repo", important: "no", note: "The site build with HTML and CSS" },
-    { projectTitle: "Product", subTitle: "Premium product card showcasing price, rating, and CTA.", category: "css", imgPath: "/src/assets/projects photo/product.png", link: "https://alialhamawy.github.io/Prodcut-Card/", gitRepo: "https://github.com/AliALHamawy/Prodcut-Card", note: "The site build with HTML and CSS, Dosen't support small screens" },
-    { projectTitle: "TailwindCss Loading Page", subTitle: "Premium loading page built with Tailwind CSS.", category: "tailwind", imgPath: "/src/assets/projects photo/TailwindCss Loading Page.png", link: "https://alialhamawy.github.io/First-Tailwind/", gitRepo: "https://github.com/AliALHamawy/First-Tailwind/", important: "no", note: "The site build with HTML and TailwindCss" },
-    { projectTitle: "Calculator", subTitle: "A lightweight JS calculator with keyboard shortcuts.", category: "js", imgPath: "/src/assets/projects photo/Calc.jpg", link: "https://alialhamawy.github.io/calculator/", gitRepo: "https://github.com/AliALHamawy/calculator", important: "yes", suggestImg: "/src/assets/suggestPhoto/calc.jpg", note: "The site build with HTML, CSS and JS" },
-    { projectTitle: "ToDo List", subTitle: "React todo app with filtering, persistence, and stats.", category: "react", imgPath: "/src/assets/projects photo/ToDo%20List.jpg", link: "https://to-o-list.netlify.app/", gitRepo: "https://github.com/AliALHamawy/ToDo-List", important: "yes", suggestImg: "/src/assets/suggestPhoto/todolist.jpg", note: "The site build with React" },
-    { projectTitle: "X - O Game", subTitle: "Tic‑Tac‑Toe built in React with smart win detection.", category: "react", imgPath: "/src/assets/projects photo/X-O%20game.jpg", link: "https://alialhamawy.github.io/x-o-game/", gitRepo: "https://github.com/AliALHamawy/X-O-game", important: "yes", suggestImg: "/src/assets/suggestPhoto/XO.jpg", note: "The site build with React" },
-    { projectTitle: "Old Portfolio", subTitle: "An old portfolio website.", category: "react", imgPath: "/src/assets/projects photo/Old Portfolio.png", link: "https://alialhamawy.github.io/portfolio/", gitRepo: "https://github.com/AliALHamawy/portfolio/", important: "yes", suggestImg: "/src/assets/suggestPhoto/portfolio.jpg", note: "The site build with React" },
-    { projectTitle: "New Accounts", subTitle: "A new accounts website with some new features.", category: "react", imgPath: "/src/assets/projects photo/new accounts.png", link: "https://new-account.pages.dev/", gitRepo: "https://github.com/AliALHamawy/new-account-", important: "yes", suggestImg: "/src/assets/suggestPhoto/accounts.jpg", note: "The site build with React" }
+    {
+        id: 1,
+        projectTitle: "Landing Page1",
+        subTitle: "A minimal hero section with smooth scroll CTA.",
+        category: "css",
+        imgPath: "/src/assets/projects photo/landing-page1.jpg",
+        link: "https://alialhamawy.github.io/html_css_project1/",
+        gitRepo: "https://github.com/AliALHamawy/html_css_project1",
+        important: "no",
+        note: "The site build with HTML and CSS",
+        imgs: [
+            "/src/assets/projectPhoto/landingpage1img1.png",
+            "/src/assets/projectPhoto/landingpage1img2.png",
+            "/src/assets/projectPhoto/landingpage1img3.png",
+            "/src/assets/projectPhoto/landingpage1img4.png",
+            "/src/assets/projectPhoto/landingpage1img5.png",
+        ]
+    },
+    {
+        id: 2,
+        projectTitle: "Landing Page2",
+        subTitle: "Modern product layout built with pure CSS grids.",
+        category: "css",
+        imgPath: "/src/assets/projects photo/Landing%20Page2.jpg",
+        link: "https://alialhamawy.github.io/html_css_project2/#include",
+        gitRepo: "https://github.com/AliALHamawy/html_css_project2",
+        important: "no",
+        note: "The site build with HTML and CSS",
+        imgs: [
+            "/src/assets/projectPhoto/landingpage2img1.png",
+            "/src/assets/projectPhoto/landingpage2img2.png",
+            "/src/assets/projectPhoto/landingpage2img3.png",
+            "/src/assets/projectPhoto/landingpage2img4.png",
+            "/src/assets/projectPhoto/landingpage2img5.png",
+            "/src/assets/projectPhoto/landingpage2img6.png",
+        ]
+    },
+    {
+        id: 3,
+        projectTitle: "Landing Page3",
+        subTitle: "Lifestyle landing with storytelling copy and imagery.",
+        category: "css",
+        imgPath: "/src/assets/projects photo/Landing%20Page3.jpg",
+        link: "https://alialhamawy.github.io/Html_Css_Project3/",
+        gitRepo: "https://github.com/AliALHamawy/Html_Css_Project3",
+        important: "no",
+        note: "The site build with HTML and CSS",
+        imgs: [
+            "/src/assets/projectPhoto/landingpage3img1.png",
+            "/src/assets/projectPhoto/landingpage3img2.png",
+            "/src/assets/projectPhoto/landingpage3img3.png",
+            "/src/assets/projectPhoto/landingpage3img4.png",
+            "/src/assets/projectPhoto/landingpage3img5.png",
+            "/src/assets/projectPhoto/landingpage3img6.png",
+            "/src/assets/projectPhoto/landingpage3img7.png",
+            "/src/assets/projectPhoto/landingpage3img8.png",
+        ]
+    },
+    {
+        id: 4,
+        projectTitle: "Landing Page4",
+        subTitle: "Interactive landing that adds micro‑animations via JS.",
+        category: "js",
+        imgPath: "/src/assets/projects photo/JS Landing Page.jpg",
+        link: "https://alialhamawy.github.io/Project5/",
+        gitRepo: "https://github.com/AliALHamawy/Project5",
+        important: "no",
+        note: "The site build with HTML, CSS and JS",
+        imgs: [
+            "/src/assets/projectPhoto/landingpage4img1.png",
+            "/src/assets/projectPhoto/landingpage4img2.png",
+            "/src/assets/projectPhoto/landingpage4img4.png",
+            "/src/assets/projectPhoto/landingpage4img5.png",
+        ]
+    },
+    {
+        id: 5,
+        projectTitle: "BootStrap",
+        subTitle: "Responsive multi-section site powered by Bootstrap 5.",
+        category: "bootstrap",
+        imgPath: "/src/assets/projects photo/BootStrap.jpg",
+        link: "https://alialhamawy.github.io/First-BootStrap/",
+        gitRepo: "https://github.com/AliALHamawy/First-BootStrap",
+        important: "no",
+        note: "The site build with HTML, CSS, JS and BootStrab",
+        imgs: [
+            "/src/assets/projectPhoto/firstBootstrab1.png",
+            "/src/assets/projectPhoto/firstBootstrab2.png",
+            "/src/assets/projectPhoto/firstBootstrab3.png",
+            "/src/assets/projectPhoto/firstBootstrab4.png",
+            "/src/assets/projectPhoto/firstBootstrab5.png",
+            "/src/assets/projectPhoto/firstBootstrab6.png",
+        ]
+    },
+    {
+        id: 6,
+        projectTitle: "Account ",
+        subTitle: "Clean account dashboard concept with cards and stats.",
+        category: "css",
+        imgPath: "/src/assets/projects photo/Account%20.jpg",
+        link: "https://alialhamawy.github.io/Acounts/",
+        gitRepo: "https://github.com/AliALHamawy/Acounts",
+        important: "no",
+        note: "The site build with HTML and CSS",
+        imgs:[
+            "/src/assets/projectPhoto/oldAccount1.png",
+            "/src/assets/projectPhoto/oldAccount2.png"
+        ]
+    },
+    {
+        id: 7,
+        projectTitle: "Login Form",
+        subTitle: "Glassmorphism login experience with subtle hover states.",
+        category: "css",
+        imgPath: "/src/assets/projects photo/Login%20Form.jpg",
+        link: "http://alialhamawy.github.io/Login-repo/index.html",
+        gitRepo: "https://github.com/AliALHamawy/Login-repo",
+        important: "no", note: "The site build with HTML and CSS",
+        imgs:[
+            "/src/assets/projectPhoto/login1.png",
+            "/src/assets/projectPhoto/login2.png"
+        ]
+    },
+    {
+        id: 8,
+        projectTitle: "Product",
+        subTitle: "Premium product card showcasing price, rating, and CTA.",
+        category: "css",
+        imgPath: "/src/assets/projects photo/product.png",
+        link: "https://alialhamawy.github.io/Prodcut-Card/",
+        gitRepo: "https://github.com/AliALHamawy/Prodcut-Card",
+        note: "The site build with HTML and CSS, Dosen't support small screens",
+        imgs:[
+            "/src/assets/projectPhoto/product1.png",
+            "/src/assets/projectPhoto/product2.png"
+        ]
+    },
+    {
+        id: 9,
+        projectTitle: "TailwindCss Loading Page",
+        subTitle: "Premium loading page built with Tailwind CSS.",
+        category: "tailwind",
+        imgPath: "/src/assets/projects photo/TailwindCss Loading Page.png",
+        link: "https://alialhamawy.github.io/First-Tailwind/",
+        gitRepo: "https://github.com/AliALHamawy/First-Tailwind/",
+        important: "no", note: "The site build with HTML and TailwindCss",
+        imgs: [
+            "/src/assets/projectPhoto/tailwind1.png",
+            "/src/assets/projectPhoto/tailwind2.png",
+            "/src/assets/projectPhoto/tailwind3.png",
+            "/src/assets/projectPhoto/tailwind4.png",
+            "/src/assets/projectPhoto/tailwind5.png",
+        ]
+    },
+    {
+        id: 10,
+        projectTitle: "Calculator",
+        subTitle: "A lightweight JS calculator with keyboard shortcuts.",
+        category: "js",
+        imgPath: "/src/assets/projects photo/Calc.jpg",
+        link: "https://alialhamawy.github.io/calculator/",
+        gitRepo: "https://github.com/AliALHamawy/calculator",
+        important: "yes",
+        suggestImg: "/src/assets/suggestPhoto/calc.jpg", note: "The site build with HTML, CSS and JS",
+        imgs:[
+            "/src/assets/projectPhoto/calc1.png",
+            "/src/assets/projectPhoto/calc2.png"
+        ]
+    },
+    {
+        id: 11,
+        projectTitle: "ToDo List",
+        subTitle: "React todo app with filtering, persistence, and stats.",
+        category: "react",
+        imgPath: "/src/assets/projects photo/ToDo%20List.jpg",
+        link: "https://to-o-list.netlify.app/",
+        gitRepo: "https://github.com/AliALHamawy/ToDo-List",
+        important: "yes",
+        suggestImg: "/src/assets/suggestPhoto/todolist.jpg", note: "The site build with React",
+        imgs:[
+            "/src/assets/projectPhoto/todo1.png",
+            "/src/assets/projectPhoto/todo2.png"
+        ]
+    },
+    {
+        id: 12,
+        projectTitle: "X - O Game",
+        subTitle: "Tic‑Tac‑Toe built in React with smart win detection.",
+        category: "react",
+        imgPath: "/src/assets/projects photo/X-O%20game.jpg",
+        link: "https://alialhamawy.github.io/x-o-game/",
+        gitRepo: "https://github.com/AliALHamawy/X-O-game",
+        important: "yes",
+        suggestImg: "/src/assets/suggestPhoto/XO.jpg", note: "The site build with React",
+        imgs:[
+            "/src/assets/projectPhoto/XO1.png",
+            "/src/assets/projectPhoto/XO2.png"
+        ]
+    },
+    {
+        id: 13,
+        projectTitle: "Old Portfolio",
+        subTitle: "An old portfolio website.",
+        category: "react",
+        imgPath: "/src/assets/projects photo/Old Portfolio.png",
+        link: "https://alialhamawy.github.io/portfolio/",
+        gitRepo: "https://github.com/AliALHamawy/portfolio/",
+        important: "yes",
+        suggestImg: "/src/assets/suggestPhoto/portfolio.jpg", note: "The site build with React",
+        imgs: [
+            "/src/assets/projectPhoto/oldPortfolio1.png",
+            "/src/assets/projectPhoto/oldPortfolio2.png",
+            "/src/assets/projectPhoto/oldPortfolio3.png",
+            "/src/assets/projectPhoto/oldPortfolio4.png",
+            "/src/assets/projectPhoto/oldPortfolio5.png",
+            "/src/assets/projectPhoto/oldPortfolio6.png",
+        ]
+    },
+    {
+        id: 14,
+        projectTitle: "New Accounts",
+        subTitle: "A new accounts website with some new features.",
+        category: "react",
+        imgPath: "/src/assets/projects photo/new accounts.png",
+        link: "https://new-account.pages.dev/",
+        gitRepo: "https://github.com/AliALHamawy/new-account-",
+        important: "yes",
+        suggestImg: "/src/assets/suggestPhoto/accounts.jpg", note: "The site build with React",
+        imgs:[
+            "/src/assets/projectPhoto/newAccount1.png",
+            "/src/assets/projectPhoto/newAccount2.png",
+            "/src/assets/projectPhoto/newAccount3.png",
+            "/src/assets/projectPhoto/newAccount4.png"
+        ]
+    }
 ];

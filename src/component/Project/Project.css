@@ -31,14 +31,14 @@
 
 
 .project .bottom-section  {
-    margin-top: 45px;
+    margin-top: 140px;
 }
 .project .bottom-section .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #444;
-    height: auto;
-    width: fit-content;
+    height: fit-content;
+    width: auto;
 
     /* Center slide text vertically */
     display: flex;
