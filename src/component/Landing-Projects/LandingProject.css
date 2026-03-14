@@ -87,7 +87,7 @@
   text-align: start !important;
   font-size: 25px;
   font-weight: 600;
-  color: #000;
+  color: #2f5435;
 
 }
 
@@ -99,17 +99,23 @@
   justify-content: flex-start !important;
   font-weight: 400;
   margin: 5px;
-  color: #3a3a3a;
+  color: #2f5435;
 }
 
 .landing-projects-section .visit {
-  background-color: #1877f2;
+  background-color: #2f5435;
   width: 95%;
   height: 30px;
   margin: 9px;
   border-radius: 5px;
   color: white;
   cursor: pointer;
+}
+
+.landing-projects-section .visit:hover,
+.landing-projects-section .visit:active {
+  background-color: #1b2c1e;
+
 }
 
 /* ====================== */

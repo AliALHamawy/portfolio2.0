@@ -5,7 +5,8 @@ hr {
 }
 
 nav {
-    background-color: #1877f2;
+    background-color: #2f5435;
+    /* background-color: #1877f2; */
     position: fixed;
     top: 0;
     left: 0;
@@ -47,9 +48,9 @@ nav span {
 
 nav a:hover,
 nav span:hover {
-    color: #06c7f6;
+    color: #1b2c1e;
 }
 
 nav a:hover {
-    border-bottom: 8px solid #06c7f6;
+    border-bottom: 8px solid #1b2c1e;
 }

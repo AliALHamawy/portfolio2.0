@@ -39,9 +39,9 @@ function Project() {
     return (
         <>
 
-            <div className="project pt-22 mx-auto p-2">
+            <div className="project pt-25 mx-auto p-2">
                 {/* {arr.map((item) => ( */}
-                <div className="top-section flex justify-between">
+                <div className="top-section flex justify-between pb-10 ">
                     <div className="left-section flex">
                         <div className="image">
                             <img src={project.imgPath} alt={project.projectTitle} />
@@ -59,6 +59,7 @@ function Project() {
                     </div>
                 </div>
                 {/* ))} */}
+                <div className="b"></div>
                 <div className="bottom-section">
                     <Swiper
                         slidesPerView={'auto'}
@@ -69,11 +70,9 @@ function Project() {
                         modules={[Pagination]}
                         className="mySwiper"
                     >
-                            <SwiperSlide >
-                                {project.imgs.map((img, index) => (<img key={index} src={img} alt={`${project.projectTitle} screenshot ${index + 1}`} />))}
-                            </SwiperSlide>
-                        
-
+                        {project.imgs.map((img, index) => (
+                            <SwiperSlide key={index}> <img src={img} alt={`${project.projectTitle} screenshot ${index + 1}`} />
+                            </SwiperSlide>))}
 
                     </Swiper>
                 </div>
@@ -83,3 +82,4 @@ function Project() {
 }
 
 export default Project
+//

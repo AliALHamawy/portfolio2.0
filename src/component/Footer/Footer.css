@@ -8,12 +8,12 @@ Footer {
     bottom: -100px;
     padding-top: 10px;
     /* position: fixed; */
-    background-color: #06c7f6;
+    background-color: #2f5435;
     z-index: 9999999999999
 }
 
 
 Footer a {
-    color: #1877f2;
+    color: #1b2c1e;
     
 }
