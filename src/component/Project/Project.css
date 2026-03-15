@@ -5,7 +5,7 @@
 .project .top-section .left-section .info .title,
 .project .top-section .left-section .info .sub-title,
 .project .top-section .left-section .info .nots {
-    color: #1877f2;
+    color: var(--mainc);
 }
 
 

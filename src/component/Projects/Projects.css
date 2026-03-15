@@ -17,10 +17,10 @@
     width: 320px;
     height: 100vh;
     bottom: .2vh;
-    background: #5c9766;
+    background: var(--lite-mainc);
     padding: 2rem;
     overflow-y: auto;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid var(--main-bgc);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -29,7 +29,7 @@
 }
 
 button {
-    background-color: #2f5435;
+    background-color: var(--mainc);
     width: 90%;
     height: 40px;
     margin: 9px;
@@ -40,12 +40,12 @@ button {
 }
 
 button:hover {
-    background-color: #1b2c1e;
+    background-color: var(--secoundc);
 }
 
 
 button.active {
-    background-color: #1b2c1e;
+    background-color: var(--secoundc);
     transform: scale(0.98);
 }
 
@@ -96,7 +96,7 @@ button.active {
 
     font-size: 20px;
     font-weight: 600;
-    color: #2f5435;
+    color: var(--mainc);
 
 }
 
@@ -108,11 +108,11 @@ button.active {
     justify-content: flex-start !important;
     font-weight: 400;
     margin: 5px;
-    color: #2f5435;
+    color: var(--mainc);
 }
 
 .visit {
-    background-color: #2f5435;
+    background-color: var(--mainc);
     width: 95%;
     height: 30px;
     margin: 9px;

@@ -8,8 +8,25 @@
     gap: 2rem;
     align-items: center;
     padding-top: 8vh;
+    position: relative;
+    z-index: 10000;
+    height: 750px;
+    background-color: var(--secound-bgc);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
-
+/* .hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 120%;
+    background-color: var(--secound-bgc);
+    z-index: -1;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    box-shadow: 1px 1px 7px #0000005d;
+} */
 .hero h1 {
     font-family: "Italianno", cursive;
     font-weight: 500;
@@ -35,7 +52,7 @@
 }
 
 .hero .right-Section p .ali {
-    color: #f6ab08;
+    color: var(--alic);
 }
 
 .hero .mind {

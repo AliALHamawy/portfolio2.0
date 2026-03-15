@@ -5,30 +5,42 @@ import './Header.css';
 function Header() {
     const [isVisible, setIsVisible] = useState(false);
     const [lastScrollTop, setLastScrollTop] = useState(0);
-    const [isHover , setIsHover] = useState(false)
+    const [isHover, setIsHover] = useState(false)
+    const [theme, setTheme] = useState(() => {
+        return localStorage.getItem("theme") || "dark";
+    })
+
+    useEffect(() => {
+        if (theme === "light") {
+            document.documentElement.classList.add("light")
+        } else {
+            document.documentElement.classList.remove("light")
+        }
+        localStorage.setItem("theme", theme)
+    }, [theme])
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-            if(scrollTop === 0) {
+            if (scrollTop === 0) {
                 setIsVisible(true)
             }
-            else if(scrollTop > lastScrollTop && !isHover) {
+            else if (scrollTop > lastScrollTop && !isHover) {
                 setIsVisible(false)
             }
-            else if(scrollTop < scrollTop && scrollTop>0 && !isHover) {
+            else if (scrollTop < scrollTop && scrollTop > 0 && !isHover) {
                 setIsVisible(true)
             }
             setLastScrollTop(scrollTop)
         };
 
         window.addEventListener('scroll', handleScroll);
-        
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [lastScrollTop , isHover]);
+    }, [lastScrollTop, isHover]);
 
     // للـ Hover
     const handleTopTriggerEnter = () => {
@@ -37,12 +49,12 @@ function Header() {
     };
 
     const handleTopTriggerLeave = () => {
-        
+
         setIsHover(false);
 
         if (window.pageYOffset === 0) {
             setTimeout(() => {
-                if(!isHover) {
+                if (!isHover) {
                     setIsVisible(false);
                 }
             }, 300)
@@ -55,12 +67,12 @@ function Header() {
     }
 
     const handleNavbarLeave = () => {
-        
+
         setIsHover(false);
 
         if (window.pageYOffset === 0) {
             setTimeout(() => {
-                if(!isHover)
+                if (!isHover)
                     setIsVisible(false)
             }, 300)
         }
@@ -68,17 +80,16 @@ function Header() {
 
     return (
         <>
-            
-            <div 
+
+            <div
                 className="top-trigger"
                 onMouseEnter={handleTopTriggerEnter}
                 onMouseLeave={handleTopTriggerLeave}
             ></div>
-            
-            <nav 
-                className={`flex justify-between mb-3 px-10 align-middle border-b-mist-400 shadow ${
-                    isVisible ? 'visible' : ''
-                }`}
+
+            <nav
+                className={`flex justify-between mb-3 px-10 align-middle border-b-mist-400 shadow ${isVisible ? 'visible' : ''
+                    }`}
                 onMouseEnter={handleNavbarEnter}
                 onMouseLeave={handleNavbarLeave}
             >
@@ -88,7 +99,12 @@ function Header() {
                     </Link>
                 </div>
                 <div className="right-section flex flex-row-reverse justify-center align-middle gap-10">
-                    <span className='ri-sun-line flex m-5 mr-2 font-bold text-xl color-mod border text-center justify-center align-middle pt-1.25 w-10 h-10 rounded-full' />
+                    <span
+                        onClick={() => {
+                            setTheme(theme === "dark" ? "light" : "dark")
+                        }}
+                        className={theme === "dark" ? 'ri-moon-clear-line flex m-5 mr-2 font-bold text-xl color-mod border text-center justify-center align-middle pt-1.25 w-10 h-10 rounded-full' :
+                            'ri-sun-line flex m-5 mr-2 font-bold text-xl color-mod border text-center justify-center align-middle pt-1.25 w-10 h-10 rounded-full'} />
                     <div className='flex justify-between gap-20 mt-7'>
                         <Link to="/projects">Projects</Link>
                         <Link to="/contact">Contact</Link>

@@ -95,7 +95,7 @@ textarea,
     font-size: 30px;
     display: flex;
     width: 30%;
-    background: #1877f2;
+    background: var(--mainc);
     background-size: cover;
     color: #ffffff;
     justify-content: center;
@@ -126,7 +126,7 @@ textarea,
     outline: none;
     height: 55px;
     padding: 20px;
-    color: #044aa7;
+    color: var(--lite-mainc);
     border-radius: 8px;
     transition:all .5s;
 }
@@ -136,15 +136,15 @@ textarea,
     outline: none;
     height: 100px;
     padding: 10px;
-    color: #044aa7;
+    color: var(--lite-mainc);
     resize: none;
     transition:all .5s;
 }
 
 .contact .container .rightsc form input:focus, 
 .contact .container .rightsc form textarea:focus {
-    outline: 1px solid #3889f3;
-    border: 1px solid #3889f3;
+    outline: 1px solid var(--lite-mainc);
+    border: 1px solid var(--lite-mainc);
 }
 
 .contact .container .rightsc form button {

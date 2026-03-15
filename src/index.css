@@ -1,9 +1,28 @@
 @import "tailwindcss";
 
+:root {
+--main-bgc: #000;
+    --secound-bgc: #ececec;
+    --alic: #f6ab08;
+    --mainc: #2f5435;
+    --secoundc: #1b2c1e;
+    --lite-mainc:#5c9766;
+}
+
+html.light {
+    --main-bgc: #dddcdc;
+    --secound-bgc: #ececec;
+    --alic: #f6ab08;
+    --mainc: #2f5435;
+    --secoundc: #1b2c1e;
+    --lite-mainc:#5c9766;
+    
+}
+
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: #dddcdc;
+    background: var(--main-bgc);
 }
 
