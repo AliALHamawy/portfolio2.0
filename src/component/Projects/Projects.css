@@ -17,10 +17,11 @@
     width: 320px;
     height: 100vh;
     bottom: .2vh;
-    background: var(--lite-mainc);
+    background: var(--therd-bgc);
     padding: 2rem;
+    padding-top: 6rem;
     overflow-y: auto;
-    border-right: 1px solid var(--main-bgc);
+    border-right: 1px solid var(--therd-bgc);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -55,9 +56,10 @@ button.active {
     justify-content: center;
     width: 348px;
     gap: 1rem;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow);
     border-radius: 10px;
     overflow: hidden;
+    background-color: var(--card-bgc);
 }
 
 .right-psection .project-card:hover img {
@@ -137,11 +139,47 @@ button.active {
     }
 }
 
-@media (max-width: 770px) {
-
+@media (max-width: 1000px) {
+    
     /* dont forget to edit it */
-    .right-psection {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+    .projects {
+        display: flex;
+        flex-direction: column;
     }
+
+    .projects .left-psection {
+        position: relative;
+        display: flex !important;
+        flex-direction: row !important;
+        width: 96%;
+        height: fit-content;
+        gap: 1rem;
+        background-color: transparent;
+        flex-wrap: wrap;
+
+    }
+
+    .projects .left-psection button {
+        width: 130px;
+        margin: 1px;
+    }
+
+    .projects .right-psection {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 70px;
+        padding-top: 20px;
+    }
+    .projects .right-psection  .project-card {
+        margin: auto;
+
+    }
+    
 }
+    @media (max-width: 770px) {
+        
+    .projects .right-psection {
+        padding: 18px;
+    }
+    }

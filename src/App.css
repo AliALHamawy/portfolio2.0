@@ -7,9 +7,9 @@ body{
     padding-bottom: 60px;
     scroll-behavior: smooth;
     user-select: none;
-    font-family: "Joti One", serif ;
+    font-family: "Joti One", serif !important ;
 }
 
 h1{
-    font-family: "Joti One" serif;
+    /* font-family: "Joti One" serif; */
 }

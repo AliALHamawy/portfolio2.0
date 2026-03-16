@@ -44,9 +44,10 @@
 }
 
 
-.project .bottom-section  {
+.project .bottom-section {
     margin-top: 95px;
 }
+
 .project .bottom-section .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -57,7 +58,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 5px 3px 4px #0f0d0d8c;
+    box-shadow: var(--shadow);
 }
 
 .project .bottom-section .swiper-slide img {
@@ -65,4 +66,101 @@
     width: auto;
     height: 100%;
     object-fit: cover;
+}
+@media (max-width: 1430px) {
+    
+.project .bottom-section .swiper {
+    height: 600px;
+}
+}
+@media (max-width: 1110px) {
+    
+.project .bottom-section .swiper {
+    height: 500px;
+}
+}
+@media (max-width: 930px) {
+    
+.project .bottom-section .swiper {
+    height: 430px;
+}
+}
+@media (max-width: 800px) {
+    
+.project .bottom-section .swiper {
+    height: 330px;
+}
+@media (max-width: 750px) {
+    .project .top-section {
+        display: flex;
+        flex-direction: column ;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .project .top-section .left-section{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .project .top-section .left-section  .image {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 13px;
+    }
+
+    .project .top-section .left-section .info {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    
+    .project .top-section .left-section .info .sub-title{
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    .project .top-section .right-section{
+        /* flex-direction: column; */
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-top: 16px;
+    }
+    
+    .project .top-section .right-section button{
+        width: 100px;
+    }
+
+}
+}
+@media (max-width: 600px) {
+    
+.project .bottom-section .swiper {
+    height: 300px;
+}
+}
+@media (max-width: 550px) {
+    
+.project .bottom-section .swiper {
+    height: 270px;
+}
+}
+@media (max-width: 480px) {
+    
+.project .bottom-section .swiper {
+    height: 240px;
+}
+}
+@media (max-width: 430px) {
+    
+.project .bottom-section .swiper {
+    height: 210px;
+}
 }

@@ -49,7 +49,7 @@ function Project() {
                         <div className="info flex flex-col gap-3 w-150 p-2 ">
                             <h2 className="title">{project.projectTitle}</h2>
                             <p className="sub-title">{project.subTitle}</p>
-                            <p className="nots">Note: {project.note}</p>
+                            <p className="nots"><span style={{color: "red"}}>Note:</span> {project.note}</p>
                         </div>
                     </div>
                     <div className="right-section justify-center align-middle text-center">

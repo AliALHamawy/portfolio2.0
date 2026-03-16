@@ -1,12 +1,39 @@
 @import "tailwindcss";
 
 :root {
---main-bgc: #000;
+
+    --main-bgc: #000000e8;
+    --secound-bgc: #000;
+    --alic: #f6ab08;
+    --mainc: #073a9e;
+    --secoundc: #031c3d;
+    --therd-bgc: #33333394;
+    --lite-mainc: #4a7fa7;
+    --textc: #8b8884;
+    --card-bgc: var(--therd-bgc);
+    --shadow: 0 1px 8px rgba(223, 223, 223, 0.096);
+}
+
+html.light {
+    --main-bgc: #85828269;
+    --secound-bgc: #ffffffbd;
+    --therd-bgc: #dde1e3d6;
+    --alic: #f6ab08;
+    --mainc: #4a7fa7;
+    --secoundc: #4765a0;
+    --lite-mainc: #1877f296;
+    --textc: #020202;
+    --card-bgc: #cfcfcf;
+    --shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* :root {
+    --main-bgc: #000;
     --secound-bgc: #ececec;
     --alic: #f6ab08;
     --mainc: #2f5435;
     --secoundc: #1b2c1e;
-    --lite-mainc:#5c9766;
+    --lite-mainc: #5c9766;
 }
 
 html.light {
@@ -15,9 +42,9 @@ html.light {
     --alic: #f6ab08;
     --mainc: #2f5435;
     --secoundc: #1b2c1e;
-    --lite-mainc:#5c9766;
-    
-}
+    --lite-mainc: #5c9766;
+
+} */
 
 body {
     margin: 0;
@@ -25,4 +52,3 @@ body {
     overflow-x: hidden;
     background: var(--main-bgc);
 }
-

@@ -63,18 +63,20 @@
     border: 2px solid #003881;
     color: #031c3d;
 
-}
-
+    }
+    
 .contact-btn {
     background-color: #003881;
-} */
-
+    } */
+    
 
 input,
 textarea,
 .contact .container {
-    border: 1px solid rgba(90, 90, 90, 0.336);
-    box-shadow: 1px 1px 8px #686868;
+    border: var(--shadow);
+    /* border: 1px solid rgba(90, 90, 90, 0.336); */
+    /* box-shadow: 1px 1px 8px #686868; */
+    box-shadow: var(--shadow);
 }
 
 .contact {
@@ -88,6 +90,7 @@ textarea,
     width: 65%;
     margin-top: 23vh;
     /* justify-content: space-between; */
+    background-color: var(--therd-bgc);
     border-radius: 10px;
 }
 
@@ -102,7 +105,7 @@ textarea,
     text-align: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 1px 2px 5px #747474;
+    box-shadow: var(--shadow);
 }
 
 .contact .container .rightsc {
@@ -111,7 +114,7 @@ textarea,
     align-items: center;
     padding: 30px;
     width: 60%;
-
+    
 }
 
 
@@ -128,7 +131,7 @@ textarea,
     padding: 20px;
     color: var(--lite-mainc);
     border-radius: 8px;
-    transition:all .5s;
+    transition: all .5s;
 }
 
 .contact .container .rightsc form textarea {
@@ -138,10 +141,10 @@ textarea,
     padding: 10px;
     color: var(--lite-mainc);
     resize: none;
-    transition:all .5s;
+    transition: all .5s;
 }
 
-.contact .container .rightsc form input:focus, 
+.contact .container .rightsc form input:focus,
 .contact .container .rightsc form textarea:focus {
     outline: 1px solid var(--lite-mainc);
     border: 1px solid var(--lite-mainc);
@@ -150,4 +153,44 @@ textarea,
 .contact .container .rightsc form button {
     margin-left: 1.4rem;
     height: 50px;
+}
+
+@media (max-width: 850px) {
+    .contact .container {
+        width: 80%;
+    }
+    
+    .contact .container .rightsc {
+        width: 70%;
+        transform: translateX(-50px);
+    }
+
+    .contact .container .leftsc {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact .container {
+        flex-direction: column;
+
+    }
+    
+    .contact .container .leftsc {
+        width: 100%;
+        height: 20%;
+        border-radius: 10px 10px 0 0;
+        box-shadow: none;
+    }
+    
+    .contact .container .rightsc {
+        padding: 8px;
+        padding-top: 20px;
+        height: 70%;
+        width: 100%;
+    }
+
+    .contact .container .rightsc button {
+        transform: translateY(-10px);
+    }
 }

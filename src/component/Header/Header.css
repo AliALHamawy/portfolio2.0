@@ -55,3 +55,6 @@ nav span:hover {
 nav a:hover {
     border-bottom: 8px solid var(--secoundc);
 }
+nav span {
+    display: none;
+}

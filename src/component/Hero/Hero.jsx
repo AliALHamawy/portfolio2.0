@@ -18,9 +18,9 @@ export default function Hero() {
                         <a href="#" className='ri-github-line github'></a>
                     </div>
                 </div>
-                <div className='border-l border-mist-400 mind'></div>
+                <div className='border-l border-mist-400 mind '></div>
                 <div className="right-Section ">
-                    <p>Welcome, I’m <span className='ali'>Ali</span><br />
+                    <p>Welcome, I’m <span className='ali'>Ali </span><br className='fbr'/>
                         Front-End Dev,<br />
                         And this is my website <br />
                         Hope you like it. <br />

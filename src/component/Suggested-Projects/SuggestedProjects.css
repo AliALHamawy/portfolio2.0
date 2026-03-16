@@ -15,7 +15,7 @@
   height: 350px;
   position: relative;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow);
     font-family: 'Joti One', sans-serif;
 
 }
@@ -48,4 +48,30 @@
   color: var(--mainc);
   position: relative;
   z-index: 1;
+}
+@media (max-width: 680px) {
+  .suggested-projects ul li:hover::before {
+    filter: grayscale(0%);
+    background-size: 165%;
+  }
+  .suggested-projects ul li::before {
+    background-size: 185%;
+
+  }
+  
+.suggested-projects ul li h1 {
+  font-size: 35px;
+  width: 150%;
+  /* margin: auto; */
+  
+}
+
+.suggested-projects ul li{
+  padding-top: 55px;
+  padding-left: 20px;
+  height: 10px;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+} 
 }

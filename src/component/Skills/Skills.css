@@ -1,6 +1,9 @@
-.skills .container {
+.skills {
     width: 80%;
     height: 5px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .gray {
     color: rgb(87, 88, 90) !important;
@@ -26,4 +29,14 @@
 }
 .figma:hover {
     color: #000 !important;
+}
+@media (max-width: 750px) {
+    
+    .skills div {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .skills {
+        margin-bottom:50px;
+    }
 }

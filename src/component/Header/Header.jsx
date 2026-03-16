@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
     const [lastScrollTop, setLastScrollTop] = useState(0);
     const [isHover, setIsHover] = useState(false)
     const [theme, setTheme] = useState(() => {
@@ -88,24 +88,24 @@ function Header() {
             ></div>
 
             <nav
-                className={`flex justify-between mb-3 px-10 align-middle border-b-mist-400 shadow ${isVisible ? 'visible' : ''
+                className={`flex justify-between mb-3 md:px-10 px-4 align-middle border-b-mist-400 shadow ${isVisible ? 'visible' : ''
                     }`}
                 onMouseEnter={handleNavbarEnter}
                 onMouseLeave={handleNavbarLeave}
             >
                 <div className="left-section">
                     <Link to="/">
-                        <img src="/src/assets/logo.png" alt="" className='w-20' />
+                        <img src="/src/assets/logo.png" alt="" className='w-20 ' />
                     </Link>
                 </div>
-                <div className="right-section flex flex-row-reverse justify-center align-middle gap-10">
+                <div className="right-section flex flex-row-reverse justify-center align-middle gap-3">
                     <span
                         onClick={() => {
                             setTheme(theme === "dark" ? "light" : "dark")
                         }}
                         className={theme === "dark" ? 'ri-moon-clear-line flex m-5 mr-2 font-bold text-xl color-mod border text-center justify-center align-middle pt-1.25 w-10 h-10 rounded-full' :
                             'ri-sun-line flex m-5 mr-2 font-bold text-xl color-mod border text-center justify-center align-middle pt-1.25 w-10 h-10 rounded-full'} />
-                    <div className='flex justify-between gap-20 mt-7'>
+                    <div className='flex justify-between gap-12 mt-7'>
                         <Link to="/projects">Projects</Link>
                         <Link to="/contact">Contact</Link>
                     </div>
