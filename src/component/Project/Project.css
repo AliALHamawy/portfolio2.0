@@ -97,6 +97,7 @@
         margin: auto;
         justify-content: center;
         align-items: center;
+        margin-top: -10px;
     }
     .project .top-section .left-section{
         flex-direction: column;
@@ -133,7 +134,9 @@
         width: 100%;
         margin-top: 16px;
     }
-    
+    .project .bottom-section {
+    margin-top: 35px;
+}
     .project .top-section .right-section button{
         width: 100px;
     }
