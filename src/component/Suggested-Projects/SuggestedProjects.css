@@ -1,6 +1,6 @@
 .suggested-projects ul li {
   background-color: hsl(225, 24%, 27%);
-  background-image: url("/src/assets/projects photo/placeholder.svg");
+  background-image: url("/assets/projects photo/placeholder.svg");
   background-repeat: no-repeat;
   background-position: center;
   padding: 120px 20px;

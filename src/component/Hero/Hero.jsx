@@ -6,7 +6,7 @@ export default function Hero() {
             <section className="hero flex justify-between">
                 <div className="left-Section flex flex-col text-center items-center justify-center">
                     <div className="image">
-                        <img src="/src/assets/me.jpg" alt="Me " className='rounded-full w-40 shadow-2xl' />
+                        <img src="assets/me.jpg" alt="Me " className='rounded-full w-40 shadow-2xl' />
                     </div>
                     <h1>Ali AL-Hamawy</h1>
                     <h3>Front-End Dev</h3>

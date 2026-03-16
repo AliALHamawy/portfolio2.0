@@ -95,7 +95,7 @@ function Header() {
             >
                 <div className="left-section">
                     <Link to="/">
-                        <img src="/src/assets/logo.png" alt="" className='w-20 ' />
+                        <img src="assets/logo.png" alt="" className='w-20 ' />
                     </Link>
                 </div>
                 <div className="right-section flex flex-row-reverse justify-center align-middle gap-3">
