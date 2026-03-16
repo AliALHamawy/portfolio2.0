@@ -6,18 +6,18 @@ function Header() {
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollTop, setLastScrollTop] = useState(0);
     const [isHover, setIsHover] = useState(false)
-    const [theme, setTheme] = useState(() => {
-        return localStorage.getItem("theme") || "dark";
-    })
+    // const [theme, setTheme] = useState(() => {
+    //     return localStorage.getItem("theme") || "dark";
+    // })
 
-    useEffect(() => {
-        if (theme === "light") {
-            document.documentElement.classList.add("light")
-        } else {
-            document.documentElement.classList.remove("light")
-        }
-        localStorage.setItem("theme", theme)
-    }, [theme])
+    // useEffect(() => {
+    //     if (theme === "light") {
+    //         document.documentElement.classList.add("light")
+    //     } else {
+    //         document.documentElement.classList.remove("light")
+    //     }
+    //     localStorage.setItem("theme", theme)
+    // }, [theme])
 
     useEffect(() => {
         const handleScroll = () => {
@@ -100,11 +100,10 @@ function Header() {
                 </div>
                 <div className="right-section flex flex-row-reverse justify-center align-middle gap-3">
                     <span
-                        onClick={() => {
-                            setTheme(theme === "dark" ? "light" : "dark")
-                        }}
-                        className={theme === "dark" ? 'ri-moon-clear-line flex m-5 mr-2 font-bold text-xl color-mod border text-center justify-center align-middle pt-1.25 w-10 h-10 rounded-full' :
-                            'ri-sun-line flex m-5 mr-2 font-bold text-xl color-mod border text-center justify-center align-middle pt-1.25 w-10 h-10 rounded-full'} />
+                        // onClick={() => {
+                        //     setTheme(theme === "dark" ? "light" : "dark")
+                        // }}
+                        className='light ri-sun-line flex m-5 mr-2 font-bold text-xl color-mod border text-center justify-center align-middle pt-1.25 w-10 h-10 rounded-full' />
                     <div className='flex justify-between gap-12 mt-7'>
                         <Link to="/projects">Projects</Link>
                         <Link to="/contact">Contact</Link>
