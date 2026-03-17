@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import 'remixicon/fonts/remixicon.css'
 import './App.css'
 import { Projects, Contact, Header, Hero, SuggestedProjects, Skills, GoUp, Footer, Project } from './Import.js'
@@ -26,6 +27,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Analytics />
     </BrowserRouter>
   )
 }
