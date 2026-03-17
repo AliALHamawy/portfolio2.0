@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './Projects.css'
 import { myProjects } from './myProjects'
 import { useNavigate } from 'react-router-dom';
+import { GoUp } from '../../Import';
 
 function Projects() {
     const [arr, setArr] = useState(myProjects);
@@ -62,6 +63,7 @@ function Projects() {
                     ))}
                 </div>
             </div>
+            <GoUp/>
         </>
     )
 }

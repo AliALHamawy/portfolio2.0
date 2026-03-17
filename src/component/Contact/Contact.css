@@ -173,12 +173,12 @@ textarea,
 @media (max-width: 700px) {
     .contact .container {
         flex-direction: column;
-
+        height: 500px;
     }
     
     .contact .container .leftsc {
         width: 100%;
-        height: 20%;
+        height: 15%;
         border-radius: 10px 10px 0 0;
         box-shadow: none;
     }
@@ -186,11 +186,21 @@ textarea,
     .contact .container .rightsc {
         padding: 8px;
         padding-top: 20px;
-        height: 70%;
+        height: 60%;
         width: 100%;
     }
 
-    .contact .container .rightsc button {
-        transform: translateY(-10px);
+    .contact .container .rightsc input {
+        height: 40px !important;
+    }
+    
+    .contact .container .rightsc textarea{
+        height: 90px !important;
+        
+    }
+
+    .contact .container .rightsc button.contact-btn {
+        transform: translate(-7px,-10px);
+        height: 40px !important;
     }
 }
