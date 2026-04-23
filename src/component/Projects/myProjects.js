@@ -241,5 +241,119 @@ export const myProjects = [
             "/assets/projectPhoto/newAccount3.png",
             "/assets/projectPhoto/newAccount4.png"
         ]
-    }
+    },
+    {
+        id: 14,
+        projectTitle: "Lingare",
+        subTitle: "A new Landing landing page with a responsive desgin.",
+        category: "react",
+        imgPath: "/assets/projectPhoto/lingare1.png",
+        link: "https://lin-gare.vercel.app/",
+        gitRepo: "https://github.com/AliALHamawy/Lin-gare",
+        important: "no",
+        // suggestImg: "/assets/SuggestPhoto/accounts.jpg",
+        note: "The site build with React",
+        imgs: [
+            "/assets/projectPhoto/lingare1.png",
+            "/assets/projectPhoto/lingare2.png",
+            "/assets/projectPhoto/lingare3.png",
+            "/assets/projectPhoto/lingare4.png",
+            // "/assets/projectPhoto/lingare5.png"
+        ]
+    },
+    {
+        id: 14,
+        projectTitle: "Tailkits",
+        subTitle: "A new Landing landing page with a responsive desgin.",
+        category: "react",
+        imgPath: "/assets/projectPhoto/tailkits1.png",
+        link: "https://tailkits.vercel.app/",
+        gitRepo: "https://github.com/AliALHamawy/Tailkits",
+        important: "no",
+        // suggestImg: "/assets/SuggestPhoto/accounts.jpg",
+        note: "The site build with React",
+        imgs: [
+            "/assets/projectPhoto/tailkits1.png",
+            "/assets/projectPhoto/tailkits2.png",
+            "/assets/projectPhoto/tailkits3.png",
+            "/assets/projectPhoto/tailkits4.png",
+            "/assets/projectPhoto/tailkits5.png"
+        ]
+    },
+    {
+        id: 14,
+        projectTitle: "Shop",
+        subTitle: "shop website.",
+        category: "react",
+        imgPath: "/assets/projectPhoto/shop1.png",
+        link: "https://shop-green-eight.vercel.app/",
+        gitRepo: "https://github.com/AliALHamawy/Shop",
+        important: "no",
+        // suggestImg: "/assets/SuggestPhoto/accounts.jpg",
+        note: "The site build with React",
+        imgs: [
+            "/assets/projectPhoto/shop1.png",
+            "/assets/projectPhoto/shop2.png",
+            "/assets/projectPhoto/shop3.png",
+            "/assets/projectPhoto/shop4.png",
+            "/assets/projectPhoto/shop5.png"
+        ]
+    },
+    {
+        id: 14,
+        projectTitle: "MovieTone",
+        subTitle: "A website that u can finde the next movie or serie to watch.",
+        category: "react",
+        imgPath: "/assets/projectPhoto/movie1.png",
+        link: "https://movies-eight-sigma.vercel.app/",
+        gitRepo: "https://github.com/AliALHamawy/Movies",
+        important: "no",
+        // suggestImg: "/assets/SuggestPhoto/accounts.jpg",
+        note: "The site build with React",
+        imgs: [
+            "/assets/projectPhoto/movie1.png",
+            "/assets/projectPhoto/movie2.png",
+            "/assets/projectPhoto/movie3.png",
+            "/assets/projectPhoto/movie4.png",
+            // "/assets/projectPhoto/movie5.png"
+        ]
+    },
+    {
+        id: 14,
+        projectTitle: "No Title",
+        subTitle: "A new accounts website with some new features.",
+        category: "react",
+        imgPath: "/assets/projectPhoto/noTitle1.png",
+        link: "https://no-title-six.vercel.app/",
+        gitRepo: "https://github.com/AliALHamawy/No-title",
+        important: "no",
+        // suggestImg: "/assets/SuggestPhoto/accounts.jpg",
+        note: "The site build with React",
+        imgs: [
+            "/assets/projectPhoto/noTitle1.png",
+            "/assets/projectPhoto/noTitle2.png",
+            "/assets/projectPhoto/noTitle3.png",
+            "/assets/projectPhoto/noTitle4.png",
+            "/assets/projectPhoto/noTitle5.png"
+        ]
+    },
+    {
+        id: 14,
+        projectTitle: "Restaurant",
+        subTitle: "A new accounts website with some new features.",
+        category: "react",
+        imgPath: "/assets/projectPhoto/restaurant1.png",
+        link: "https://restaurant-nine-roan-15.vercel.app/",
+        gitRepo: "https://github.com/AliALHamawy/Restaurant",
+        important: "no",
+        // suggestImg: "/assets/SuggestPhoto/accounts.jpg",
+        note: "The site build with React",
+        imgs: [
+            "/assets/projectPhoto/restaurant1.png",
+            "/assets/projectPhoto/restaurant2.png",
+            "/assets/projectPhoto/restaurant3.png",
+            "/assets/projectPhoto/restaurant4.png",
+            "/assets/projectPhoto/restaurant5.png"
+        ]
+    },
 ];
